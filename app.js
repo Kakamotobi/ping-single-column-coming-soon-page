@@ -32,6 +32,6 @@ function setErrorFor(email, msg) {
 
 function setSuccessFor(email) {
     email.classList.remove("show-input-error");
-    email.innerText = "";
+    email.value = "";
     errorMsg.innerText = "";
 }
