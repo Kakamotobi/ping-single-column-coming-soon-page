@@ -32,16 +32,20 @@
             <img src="styles/images/logo.svg" alt="Logo Image" />
         </header>
 
-        <main>
+        <main class="subscription">
             <h1>We are launching <b>soon!</b></h1>
-            <p>Subscribe and get notified</p>
-            <form action="/" class="subscription" novalidate>
-                <input
-                    type="email"
-                    placeholder="Your email address..."
-                    aria-label="Email"
-                    class="subscription-email"
-                />
+            <p class="subscription-desc">Subscribe and get notified</p>
+            <form action="/" class="subscription-form" novalidate>
+                <div class="subscription-form-control">
+                    <input
+                        type="email"
+                        placeholder="Your email address..."
+                        aria-label="Email"
+                        class="subscription-email"
+                        id="test"
+                    />
+                    <div class="subscription-error-msg"></div>
+                </div>
                 <button type="submit" class="subscription-btn">
                     Notify Me
                 </button>
@@ -76,7 +80,8 @@
                     href="https://www.frontendmentor.io?ref=challenge"
                     target="_blank"
                     >Frontend Mentor</a
-                >. Coded by <a href="#">Your Name Here</a>.
+                >. Coded by
+                <a href="https://github.com/Kakamotobi">Kakamotobi</a>.
             </p>
         </footer>
 
