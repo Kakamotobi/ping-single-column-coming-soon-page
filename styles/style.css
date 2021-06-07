@@ -6,16 +6,116 @@
     --veryDrkBlue: hsl(209, 33%, 12%);
 }
 
+* {
+    box-sizing: border-box;
+}
+
 body {
+    min-height: 100vh;
     margin: 0;
-    padding: 0;
+    padding: 90px 30px 0 30px;
     font-size: 12px;
     font-family: "Libre Franklin", sans-serif;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 35px;
+}
+
+header > img {
+    width: 55px;
+}
+
+h1 {
+    margin: auto auto 16px auto;
+    font-weight: 300;
+    color: var(--grey);
+}
+h1 > b {
+    color: #000;
+}
+
+.subscription-desc {
+    margin: auto auto 32px auto;
+}
+.subscription-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.subscription-form-control {
+    height: 60px;
+}
+.subscription-email {
+    width: 275px;
+    height: 40px;
+    margin-bottom: 3px;
+    padding-left: 30px;
+    border: 1px solid var(--paleBlue);
+    border-radius: 20px;
+}
+.subscription-email::placeholder {
+    color: var(--paleBlue);
+}
+.subscription-error-msg {
+    text-align: center;
+    font-size: 0.7rem;
+    font-style: italic;
+    color: var(--lightRed);
+}
+.subscription-btn {
+    width: 275px;
+    height: 40px;
+    margin-bottom: 65px;
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 20px;
+    box-shadow: 0 5px 5px var(--paleBlue);
+    color: #fff;
+}
+
+.illustration > img {
+    max-width: 100%;
+    margin-bottom: 120px;
+}
+
+.snsIcons {
+    width: 100%;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.snsIcons .snsIcon {
+    margin: 0 7px;
+}
+.snsIcon .fab {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--paleBlue);
+    border-radius: 50%;
+    font-size: 0.9rem;
+    color: var(--blue);
+    transition: all 200ms ease-out;
+}
+.snsIcon a {
+    text-decoration: none;
+}
+
+.copyright {
+    margin-bottom: 30px;
+    font-size: 0.6rem;
+    color: var(--grey);
 }
 
 .attribution {
     font-size: 11px;
     text-align: center;
+    margin: 0;
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
