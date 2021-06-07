@@ -96,7 +96,7 @@ h1 > b {
     display: flex;
     justify-content: center;
 }
-.snsIcons .snsIcon {
+.snsIcon {
     margin: 0 7px;
 }
 .snsIcon .fab {
@@ -110,8 +110,14 @@ h1 > b {
     border-radius: 50%;
     font-size: 0.9rem;
     color: var(--blue);
-    transition: all 200ms ease-out;
+    transition: all 200ms ease-in-out;
 }
+.snsIcon .fab:hover {
+    color: #fff;
+    background-color: var(--blue);
+    border: none;
+}
+
 .snsIcon a {
     text-decoration: none;
 }
