@@ -62,6 +62,9 @@ h1 > b {
 .subscription-email:hover {
     border-color: var(--blue);
 }
+.show-input-error {
+    border: 2px solid var(--lightRed);
+}
 .subscription-error-msg {
     text-align: center;
     font-size: 0.7rem;
