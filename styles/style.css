@@ -53,10 +53,14 @@ h1 > b {
     margin-bottom: 3px;
     padding-left: 30px;
     border: 1px solid var(--paleBlue);
-    border-radius: 20px;
+    border-radius: 30px;
+    transition: border-color ease-in-out 150ms;
 }
 .subscription-email::placeholder {
     color: var(--paleBlue);
+}
+.subscription-email:hover {
+    border-color: var(--blue);
 }
 .subscription-error-msg {
     text-align: center;
@@ -69,14 +73,20 @@ h1 > b {
     height: 40px;
     margin-bottom: 65px;
     background-color: var(--blue);
-    border: 1px solid var(--blue);
-    border-radius: 20px;
+    border: none;
+    border-radius: 30px;
     box-shadow: 0 5px 5px var(--paleBlue);
     color: #fff;
+    cursor: pointer;
+    transition: background-color ease-in-out 150ms;
+}
+.subscription-btn:hover {
+    background-color: hsl(223, 87%, 70%);
 }
 
 .illustration > img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 650px;
     margin-bottom: 120px;
 }
 
@@ -119,4 +129,40 @@ h1 > b {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+/* Media Query - Desktop */
+@media screen and (min-width: 1000px) {
+    body {
+        padding-top: 80px;
+    }
+    header > img {
+        width: 90px;
+    }
+    h1 {
+        font-size: 2.5rem;
+    }
+    .subscription-desc {
+        font-size: 1rem;
+    }
+    .subscription-form {
+        margin-bottom: 60px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .subscription-email {
+        width: 350px;
+        height: 45px;
+        margin-right: 15px;
+    }
+    .subscription-error-msg {
+        text-align: left;
+        padding-left: 30px;
+    }
+    .subscription-btn {
+        width: 150px;
+        height: 45px;
+        margin-bottom: 0;
+    }
 }
